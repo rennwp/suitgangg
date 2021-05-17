@@ -25,6 +25,12 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h3 {
+    font-size:20px;
+    color: #475963;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .game {
     border: solid 5px #475963;
     margin: 100px;
@@ -61,6 +67,7 @@ h2 {
 
 .hover:hover {
     transform: scale(1.1, 1.1);
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.7);
     
 }
 
@@ -69,5 +76,15 @@ h2 {
     height: 60px;
     background-color: #e1ded7;
     margin: auto
+}
+
+.score {
+    background-color: white;
+    width: 150px;
+    height: 25px;
+}
+
+.kom {
+    margin-bottom: 10px;
 }
 

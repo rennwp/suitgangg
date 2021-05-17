@@ -28,6 +28,8 @@ let pilihanOrang = document.getElementById('orang');
 let pilihanSemut = document.getElementById('semut');
 let gambarKomputer = document.querySelector('.komputer img')
 let hasil = document.querySelector('.hasil');
+let score = document.querySelector('.score h3')
+let angka = 0;
 
 pilihanGajah.addEventListener('click', function(){
     let pilihanKomputer = Math.floor(Math.random() * 10) ;
@@ -38,6 +40,8 @@ pilihanGajah.addEventListener('click', function(){
     }else if( hasilKomputer == 'orang' ){
         gambarKomputer.setAttribute('src', 'img/orang.jpg')
         hasil.innerHTML = 'MENANG !!!';
+        angka += 10;
+        score.innerHTML = 'Score : '+ angka +'';
     }else if( hasilKomputer == 'semut' ){
         gambarKomputer.setAttribute('src', 'img/semut.jpg')
         hasil.innerHTML = 'KALAH !!!';
@@ -53,6 +57,8 @@ pilihanOrang.addEventListener('click', function(){
     }else if( hasilKomputer == 'semut' ){
         gambarKomputer.setAttribute('src', 'img/semut.jpg')
         hasil.innerHTML = 'MENANG !!!';
+        angka += 10;
+        score.innerHTML = 'Score : '+ angka +'';
     }else if( hasilKomputer == 'gajah' ){
         gambarKomputer.setAttribute('src', 'img/gajah.jpg')
         hasil.innerHTML = 'KALAH !!!';
@@ -68,6 +74,8 @@ pilihanSemut.addEventListener('click', function(){
     }else if( hasilKomputer == 'gajah' ){
         gambarKomputer.setAttribute('src', 'img/gajah.jpg')
         hasil.innerHTML = 'MENANG !!!';
+        angka += 10;
+        score.innerHTML = 'Score : '+ angka +'';
     }else if( hasilKomputer == 'orang' ){
         gambarKomputer.setAttribute('src', 'img/orang.jpg')
         hasil.innerHTML = 'KALAH !!!';
